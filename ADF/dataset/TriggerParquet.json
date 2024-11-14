@@ -1,0 +1,50 @@
+{
+	"name": "TriggerParquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "trigger",
+				"fileSystem": "test"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "campus_key",
+				"type": "INT32"
+			},
+			{
+				"name": "campus_code",
+				"type": "UTF8"
+			},
+			{
+				"name": "campus_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "mail_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "course",
+				"type": "UTF8"
+			},
+			{
+				"name": "creation_date",
+				"type": "INT96"
+			},
+			{
+				"name": "update_date",
+				"type": "INT96"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

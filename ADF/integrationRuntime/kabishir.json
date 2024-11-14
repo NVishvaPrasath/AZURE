@@ -1,0 +1,12 @@
+{
+	"name": "kabishir",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/9701ebe8-871d-4365-b6fb-b15ff083f343/resourcegroups/Kabi/providers/Microsoft.DataFactory/factories/kabiadf/integrationruntimes/kabishir",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "AzureSqlTable3",
+						"type": "DatasetReference"
+					},
+					"name": "sourceCampus"
+				},
+				{
+					"dataset": {
+						"referenceName": "Parquet",
+						"type": "DatasetReference"
+					},
+					"name": "SourceParquetFromADLS1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "AzureSqlTable2",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "alterRow"
+				},
+				{
+					"name": "exists"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          campus_key as integer,",
+				"          campus_code as string,",
+				"          campus_name as string,",
+				"          mail_id as string,",
+				"          course as string,",
+				"          creation_date as timestamp,",
+				"          update_date as timestamp",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     isolationLevel: 'READ_UNCOMMITTED',",
+				"     format: 'table') ~> sourceCampus",
+				"source(output(",
+				"          campus_key as integer,",
+				"          campus_code as string,",
+				"          campus_name as string,",
+				"          mail_id as string,",
+				"          course as string,",
+				"          creation_date as timestamp,",
+				"          update_date as timestamp",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     format: 'parquet') ~> SourceParquetFromADLS1",
+				"exists alterRow(deleteIf(true())) ~> alterRow",
+				"sourceCampus, SourceParquetFromADLS1 exists(sourceCampus@campus_key == SourceParquetFromADLS1@campus_key,",
+				"     negate:true,",
+				"     broadcast: 'auto')~> exists",
+				"alterRow sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     deletable:true,",
+				"     insertable:false,",
+				"     updateable:false,",
+				"     upsertable:false,",
+				"     keys:['campus_key','campus_code'],",
+				"     format: 'table',",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     errorHandlingOption: 'stopOnFirstError') ~> sink1"
+			]
+		}
+	}
+}
