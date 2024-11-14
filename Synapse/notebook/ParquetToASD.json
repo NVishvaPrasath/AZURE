@@ -1,0 +1,1193 @@
+{
+	"name": "ParquetToASD",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "parquetuti",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 2,
+			"runAsWorkspaceSystemIdentity": false,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2",
+				"spark.autotune.trackingId": "c9dda5db-db58-46ea-873c-878e9c571ca9"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"synapse_widget": {
+				"version": "0.1",
+				"state": {
+					"41473495-ba4f-48ad-a2db-67a1ece1c207": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "1",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "1",
+										"5": "",
+										"6": "",
+										"7": "",
+										"8": "",
+										"9": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+										"10": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+									},
+									{
+										"0": "1",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "2",
+										"5": "",
+										"6": "",
+										"7": "",
+										"8": "",
+										"9": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+										"10": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+									},
+									{
+										"0": "1",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "3",
+										"5": "",
+										"6": "",
+										"7": "",
+										"8": "",
+										"9": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+										"10": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+									},
+									{
+										"0": "1",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "4",
+										"5": "",
+										"6": "",
+										"7": "",
+										"8": "",
+										"9": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+										"10": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+									},
+									{
+										"0": "1",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "5",
+										"5": "",
+										"6": "",
+										"7": "",
+										"8": "",
+										"9": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+										"10": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "page",
+										"type": "bigint"
+									},
+									{
+										"key": "1",
+										"name": "per_page",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "total",
+										"type": "bigint"
+									},
+									{
+										"key": "3",
+										"name": "total_pages",
+										"type": "bigint"
+									},
+									{
+										"key": "4",
+										"name": "id",
+										"type": "bigint"
+									},
+									{
+										"key": "5",
+										"name": "email",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "first_name",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "last_name",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "avatar",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "url",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "text",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala",
+							"wranglerEntryContext": {
+								"candidateVariableNames": [
+									"df"
+								],
+								"dataframeType": "pyspark"
+							}
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"1e83eb3c-ff91-4a1c-bdcc-2c57644c35e7": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": {
+											"first_name": "George",
+											"avatar": "https://reqres.in/img/faces/1-image.jpg",
+											"email": "george.bluth@reqres.in",
+											"id": 1,
+											"last_name": "Bluth"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									},
+									{
+										"0": {
+											"first_name": "Janet",
+											"avatar": "https://reqres.in/img/faces/2-image.jpg",
+											"email": "janet.weaver@reqres.in",
+											"id": 2,
+											"last_name": "Weaver"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									},
+									{
+										"0": {
+											"first_name": "Emma",
+											"avatar": "https://reqres.in/img/faces/3-image.jpg",
+											"email": "emma.wong@reqres.in",
+											"id": 3,
+											"last_name": "Wong"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									},
+									{
+										"0": {
+											"first_name": "Eve",
+											"avatar": "https://reqres.in/img/faces/4-image.jpg",
+											"email": "eve.holt@reqres.in",
+											"id": 4,
+											"last_name": "Holt"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									},
+									{
+										"0": {
+											"first_name": "Charles",
+											"avatar": "https://reqres.in/img/faces/5-image.jpg",
+											"email": "charles.morris@reqres.in",
+											"id": 5,
+											"last_name": "Morris"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									},
+									{
+										"0": {
+											"first_name": "Tracey",
+											"avatar": "https://reqres.in/img/faces/6-image.jpg",
+											"email": "tracey.ramos@reqres.in",
+											"id": 6,
+											"last_name": "Ramos"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "data",
+										"type": "StructType(StructField(avatar,StringType,true),StructField(email,StringType,true),StructField(first_name,StringType,true),StructField(id,ShortType,true),StructField(last_name,StringType,true))"
+									},
+									{
+										"key": "1",
+										"name": "page",
+										"type": "boolean"
+									},
+									{
+										"key": "2",
+										"name": "per_page",
+										"type": "smallint"
+									},
+									{
+										"key": "3",
+										"name": "support",
+										"type": "StructType(StructField(text,StringType,true),StructField(url,StringType,true))"
+									},
+									{
+										"key": "4",
+										"name": "total",
+										"type": "smallint"
+									},
+									{
+										"key": "5",
+										"name": "total_pages",
+										"type": "smallint"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala",
+							"wranglerEntryContext": {
+								"candidateVariableNames": [
+									"df"
+								],
+								"dataframeType": "pyspark"
+							}
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"2"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"be686a1e-2aa8-4cb6-9e0a-5e0ddaac525c": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": {
+											"first_name": "George",
+											"avatar": "https://reqres.in/img/faces/1-image.jpg",
+											"email": "george.bluth@reqres.in",
+											"id": 1,
+											"last_name": "Bluth"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									},
+									{
+										"0": {
+											"first_name": "Janet",
+											"avatar": "https://reqres.in/img/faces/2-image.jpg",
+											"email": "janet.weaver@reqres.in",
+											"id": 2,
+											"last_name": "Weaver"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									},
+									{
+										"0": {
+											"first_name": "Emma",
+											"avatar": "https://reqres.in/img/faces/3-image.jpg",
+											"email": "emma.wong@reqres.in",
+											"id": 3,
+											"last_name": "Wong"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									},
+									{
+										"0": {
+											"first_name": "Eve",
+											"avatar": "https://reqres.in/img/faces/4-image.jpg",
+											"email": "eve.holt@reqres.in",
+											"id": 4,
+											"last_name": "Holt"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									},
+									{
+										"0": {
+											"first_name": "Charles",
+											"avatar": "https://reqres.in/img/faces/5-image.jpg",
+											"email": "charles.morris@reqres.in",
+											"id": 5,
+											"last_name": "Morris"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									},
+									{
+										"0": {
+											"first_name": "Tracey",
+											"avatar": "https://reqres.in/img/faces/6-image.jpg",
+											"email": "tracey.ramos@reqres.in",
+											"id": 6,
+											"last_name": "Ramos"
+										},
+										"1": "true",
+										"2": "6",
+										"3": {
+											"text": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+											"url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+										},
+										"4": "12",
+										"5": "2"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "data",
+										"type": "StructType(StructField(avatar,StringType,true),StructField(email,StringType,true),StructField(first_name,StringType,true),StructField(id,LongType,true),StructField(last_name,StringType,true))"
+									},
+									{
+										"key": "1",
+										"name": "page",
+										"type": "boolean"
+									},
+									{
+										"key": "2",
+										"name": "per_page",
+										"type": "bigint"
+									},
+									{
+										"key": "3",
+										"name": "support",
+										"type": "StructType(StructField(text,StringType,true),StructField(url,StringType,true))"
+									},
+									{
+										"key": "4",
+										"name": "total",
+										"type": "bigint"
+									},
+									{
+										"key": "5",
+										"name": "total_pages",
+										"type": "bigint"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala",
+							"wranglerEntryContext": {
+								"candidateVariableNames": [
+									"df"
+								],
+								"dataframeType": "pyspark"
+							}
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"2"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"34efb235-dfe3-4785-a782-04e9dc2790e0": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "true",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "1",
+										"5": "George",
+										"6": "Bluth",
+										"7": "george.bluth@reqres.in",
+										"8": "https://reqres.in/img/faces/1-image.jpg",
+										"9": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+										"10": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+									},
+									{
+										"0": "true",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "2",
+										"5": "Janet",
+										"6": "Weaver",
+										"7": "janet.weaver@reqres.in",
+										"8": "https://reqres.in/img/faces/2-image.jpg",
+										"9": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+										"10": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+									},
+									{
+										"0": "true",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "3",
+										"5": "Emma",
+										"6": "Wong",
+										"7": "emma.wong@reqres.in",
+										"8": "https://reqres.in/img/faces/3-image.jpg",
+										"9": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+										"10": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+									},
+									{
+										"0": "true",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "4",
+										"5": "Eve",
+										"6": "Holt",
+										"7": "eve.holt@reqres.in",
+										"8": "https://reqres.in/img/faces/4-image.jpg",
+										"9": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+										"10": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+									},
+									{
+										"0": "true",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "5",
+										"5": "Charles",
+										"6": "Morris",
+										"7": "charles.morris@reqres.in",
+										"8": "https://reqres.in/img/faces/5-image.jpg",
+										"9": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+										"10": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+									},
+									{
+										"0": "true",
+										"1": "6",
+										"2": "12",
+										"3": "2",
+										"4": "6",
+										"5": "Tracey",
+										"6": "Ramos",
+										"7": "tracey.ramos@reqres.in",
+										"8": "https://reqres.in/img/faces/6-image.jpg",
+										"9": "Tired of writing endless social media content? Let Content Caddy generate it for you.",
+										"10": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "page",
+										"type": "boolean"
+									},
+									{
+										"key": "1",
+										"name": "per_page",
+										"type": "bigint"
+									},
+									{
+										"key": "2",
+										"name": "total",
+										"type": "bigint"
+									},
+									{
+										"key": "3",
+										"name": "total_pages",
+										"type": "bigint"
+									},
+									{
+										"key": "4",
+										"name": "id",
+										"type": "bigint"
+									},
+									{
+										"key": "5",
+										"name": "first_name",
+										"type": "string"
+									},
+									{
+										"key": "6",
+										"name": "last_name",
+										"type": "string"
+									},
+									{
+										"key": "7",
+										"name": "email",
+										"type": "string"
+									},
+									{
+										"key": "8",
+										"name": "avatar",
+										"type": "string"
+									},
+									{
+										"key": "9",
+										"name": "text",
+										"type": "string"
+									},
+									{
+										"key": "10",
+										"name": "url",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala",
+							"wranglerEntryContext": {
+								"candidateVariableNames": [
+									"df_extracted"
+								],
+								"dataframeType": "pyspark"
+							}
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"0"
+									],
+									"seriesFieldKeys": [
+										"1"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"1206360c-7e97-4163-b05e-1ba328692fd6": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "1",
+										"1": "george.bluth@reqres.in",
+										"2": "George",
+										"3": "Bluth",
+										"4": "https://reqres.in/img/faces/1-image.jpg"
+									},
+									{
+										"0": "2",
+										"1": "janet.weaver@reqres.in",
+										"2": "Janet",
+										"3": "Weaver",
+										"4": "https://reqres.in/img/faces/2-image.jpg"
+									},
+									{
+										"0": "3",
+										"1": "emma.wong@reqres.in",
+										"2": "Emma",
+										"3": "Wong",
+										"4": "https://reqres.in/img/faces/3-image.jpg"
+									},
+									{
+										"0": "4",
+										"1": "eve.holt@reqres.in",
+										"2": "Eve",
+										"3": "Holt",
+										"4": "https://reqres.in/img/faces/4-image.jpg"
+									},
+									{
+										"0": "5",
+										"1": "charles.morris@reqres.in",
+										"2": "Charles",
+										"3": "Morris",
+										"4": "https://reqres.in/img/faces/5-image.jpg"
+									},
+									{
+										"0": "6",
+										"1": "tracey.ramos@reqres.in",
+										"2": "Tracey",
+										"3": "Ramos",
+										"4": "https://reqres.in/img/faces/6-image.jpg"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "id",
+										"type": "bigint"
+									},
+									{
+										"key": "1",
+										"name": "email",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "first_name",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "last_name",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "avatar",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala",
+							"wranglerEntryContext": {
+								"candidateVariableNames": [
+									"df_selected"
+								],
+								"dataframeType": "pyspark"
+							}
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"a68cea3b-461b-48b6-830e-7ba663f12914": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"0": "1",
+										"1": "george.bluth@reqres.in",
+										"2": "George",
+										"3": "Bluth",
+										"4": "https://reqres.in/img/faces/1-image.jpg"
+									},
+									{
+										"0": "2",
+										"1": "janet.weaver@reqres.in",
+										"2": "Janet",
+										"3": "Weaver",
+										"4": "https://reqres.in/img/faces/2-image.jpg"
+									},
+									{
+										"0": "3",
+										"1": "emma.wong@reqres.in",
+										"2": "Emma",
+										"3": "Wong",
+										"4": "https://reqres.in/img/faces/3-image.jpg"
+									},
+									{
+										"0": "4",
+										"1": "eve.holt@reqres.in",
+										"2": "Eve",
+										"3": "Holt",
+										"4": "https://reqres.in/img/faces/4-image.jpg"
+									},
+									{
+										"0": "5",
+										"1": "charles.morris@reqres.in",
+										"2": "Charles",
+										"3": "Morris",
+										"4": "https://reqres.in/img/faces/5-image.jpg"
+									},
+									{
+										"0": "6",
+										"1": "tracey.ramos@reqres.in",
+										"2": "Tracey",
+										"3": "Ramos",
+										"4": "https://reqres.in/img/faces/6-image.jpg"
+									}
+								],
+								"schema": [
+									{
+										"key": "0",
+										"name": "id",
+										"type": "bigint"
+									},
+									{
+										"key": "1",
+										"name": "email",
+										"type": "string"
+									},
+									{
+										"key": "2",
+										"name": "first_name",
+										"type": "string"
+									},
+									{
+										"key": "3",
+										"name": "last_name",
+										"type": "string"
+									},
+									{
+										"key": "4",
+										"name": "avatar",
+										"type": "string"
+									}
+								],
+								"truncated": false
+							},
+							"isSummary": false,
+							"language": "scala",
+							"wranglerEntryContext": {
+								"candidateVariableNames": [
+									"df_selected"
+								],
+								"dataframeType": "pyspark"
+							}
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"1"
+									],
+									"seriesFieldKeys": [
+										"0"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
+			},
+			"enableDebugMode": false,
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/9701ebe8-871d-4365-b6fb-b15ff083f343/resourceGroups/resource/providers/Microsoft.Synapse/workspaces/workingondatatypecheck/bigDataPools/parquetuti",
+				"name": "parquetuti",
+				"type": "Spark",
+				"endpoint": "https://workingondatatypecheck.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/parquetuti",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net",
+					"authHeader": null
+				},
+				"sparkVersion": "3.4",
+				"nodeCount": 10,
+				"cores": 4,
+				"memory": 28,
+				"extraHeader": null
+			},
+			"sessionKeepAliveTimeout": 30
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"from pyspark.sql import SparkSession "
+				],
+				"execution_count": 23
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"collapsed": false
+				},
+				"source": [
+					"# from pyspark.sql import SparkSession \r\n",
+					"# from pyspark.sql import functions as F\r\n",
+					"# spark = SparkSession.builder.appName(\"ParquetExample\").getOrCreate()\r\n",
+					"# df = spark.read.parquet('abfss://vishva@pocstorage10.dfs.core.windows.net/test/httpData.parquet')\r\n",
+					"# display(df)"
+				],
+				"execution_count": 24
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"For Handling the NULL values in the JSON , initially i manually uploaded a JSON in the BOLB with Null values inside the array(data[]) and then in the ADF using Copy Activity for Source I used the JSON in the Blob and for the Sink created a dataset as Parquet and stored it in the Blob as parquet file and alos in the mapping i manually added the Collection Refference for the array as data[] and imported the Schemas and then i debug the Pipeline HTTP and then in this note using Pyspark i read the parquet file from the bolb and got the below output."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"from pyspark.sql.functions import col\r\n",
+					"df = spark.read.parquet('abfss://vishva@pocstorage10.dfs.core.windows.net/test/Json.parquet')\r\n",
+					"display(df)\r\n",
+					""
+				],
+				"execution_count": 25
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"Using the Flatten transformation in the ADF Data Flow and before this using copy activity and input source as Http url and sink as Json file(Test2.json) in the Data Flow for the source use the json from the blob and in the source options - > Json settings -> Documnet per line and import the schemas in the mapping and then use the Flatten Transformation in that use the Unroll By option to select the array to unroll and don't reset the mapping it will change the data and provie only the array values as separate column , Now in the Sink choose the Dataset as Parquet and in the setting give the file name with format and run the Data Flow in the pipeline. and below is the ouput for the parquet file generated via Data Flow using Flatten transformation."
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"from pyspark.sql.functions import col explode\r\n",
+					"df = spark.read.parquet('abfss://vishva@pocstorage10.dfs.core.windows.net/test/Test2.parquet')\r\n",
+					"display(df)"
+				],
+				"execution_count": 26
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"from pyspark.sql.functions import explode, col\r\n",
+					"df_selected = df.select(\r\n",
+					"    col(\"data.id\").alias(\"id\"),\r\n",
+					"    col(\"data.email\").alias(\"email\"),\r\n",
+					"    col(\"data.first_name\").alias(\"first_name\"),\r\n",
+					"    col(\"data.last_name\").alias(\"last_name\"),\r\n",
+					"    col(\"data.avatar\").alias(\"avatar\")\r\n",
+					")\r\n",
+					"display(df_selected)"
+				],
+				"execution_count": 37
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"from pyspark.sql.functions import col\r\n",
+					"df = spark.read.json('abfss://vishva@pocstorage10.dfs.core.windows.net/test/Test3.json')\r\n",
+					"display(df)"
+				],
+				"execution_count": 27
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"from pyspark.sql.functions import explode, col\r\n",
+					"df_selected = df.select(\r\n",
+					"    col(\"data.id\").alias(\"id\"),\r\n",
+					"    col(\"data.email\").alias(\"email\"),\r\n",
+					"    col(\"data.first_name\").alias(\"first_name\"),\r\n",
+					"    col(\"data.last_name\").alias(\"last_name\"),\r\n",
+					"    col(\"data.avatar\").alias(\"avatar\")\r\n",
+					")\r\n",
+					"display(df_selected)"
+				],
+				"execution_count": 36
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"from pyspark.sql.functions import col\r\n",
+					"\r\n",
+					"# Flatten each field within the 'data' struct into its own column\r\n",
+					"df_extracted = (\r\n",
+					"    df.withColumn(\"id\", col(\"data.id\"))\r\n",
+					"      .withColumn(\"first_name\", col(\"data.first_name\"))\r\n",
+					"      .withColumn(\"last_name\", col(\"data.last_name\"))\r\n",
+					"      .withColumn(\"email\", col(\"data.email\"))\r\n",
+					"      .withColumn(\"avatar\", col(\"data.avatar\"))\r\n",
+					"      .withColumn(\"text\",col(\"support.text\"))\r\n",
+					"      .withColumn(\"url\",col(\"support.url\"))\r\n",
+					"      .drop(\"data\")\r\n",
+					"      .drop(\"support\") # Optionally drop the original 'data' column if no longer needed\r\n",
+					")\r\n",
+					"\r\n",
+					"# Show the resulting DataFrame\r\n",
+					"display(df_extracted)\r\n",
+					""
+				],
+				"execution_count": 28
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# Database connection details\r\n",
+					"jdbc_url = \"jdbc:sqlserver://pocserverset.database.windows.net:1433;database=pocdatabaseset;\"\r\n",
+					"properties = {\r\n",
+					"    \"user\": \"anjana\",\r\n",
+					"    \"password\": \"Shamala@2001\",\r\n",
+					"    \"driver\": \"com.microsoft.sqlserver.jdbc.SQLServerDriver\"\r\n",
+					"}\r\n",
+					"\r\n",
+					"# Write result_df to the Azure SQL Database\r\n",
+					"df_extracted.write \\\r\n",
+					"    .jdbc(url=jdbc_url, table=\"Http_table\", mode=\"overwrite\", properties=properties)\r\n",
+					""
+				],
+				"execution_count": 29
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"# # Step 1: Create a temporary view\r\n",
+					"df_users.createOrReplaceTempView(\"TempView\")\r\n",
+					"\r\n",
+					"# # Step 2: Optionally, run SQL queries on the temporary view (if you want to perform any SQL operations)\r\n",
+					"result_df = spark.sql(\"SELECT * FROM TempView\")\r\n",
+					"\r\n",
+					"# # Step 3: Save the DataFrame (filtered_df or result_df) as a permanent table in the \"ASD\" database\r\n",
+					"# df.write.mode(\"overwrite\").saveAsTable(\"ASD.filtered_table\")\r\n",
+					"\r\n",
+					"# # Alternatively, if you used result_df after SQL operations, save it as a table:\r\n",
+					"# # result_df.write.mode(\"overwrite\").saveAsTable(\"ASD.filtered_table\")\r\n",
+					""
+				],
+				"execution_count": 30
+			}
+		]
+	}
+}

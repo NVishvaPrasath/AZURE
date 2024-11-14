@@ -1,0 +1,51 @@
+{
+	"name": "SqlServerTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServerDataType",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "campus_key",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "campus_code",
+				"type": "varchar"
+			},
+			{
+				"name": "campus_name",
+				"type": "varchar"
+			},
+			{
+				"name": "mail_id",
+				"type": "varchar"
+			},
+			{
+				"name": "course",
+				"type": "varchar"
+			},
+			{
+				"name": "creation_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "update_date",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Student"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

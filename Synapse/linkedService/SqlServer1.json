@@ -1,0 +1,21 @@
+{
+	"name": "SqlServer1",
+	"type": "Microsoft.Synapse/workspaces/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "EM-BN55HG3",
+			"database": "vishva",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "Windows",
+			"userName": "EM-BN55HG3\\Admin",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiYTRjMDAxMi1kMmVhLTQ4ZjUtOGFiNC01Yjg5NDQ2MjA3ZGIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "KabiSynapse",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

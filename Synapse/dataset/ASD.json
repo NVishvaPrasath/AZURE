@@ -1,0 +1,53 @@
+{
+	"name": "ASD",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "campus_key",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "campus_code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "campus_name",
+				"type": "nvarchar"
+			},
+			{
+				"name": "mail_id",
+				"type": "nvarchar"
+			},
+			{
+				"name": "course",
+				"type": "nvarchar"
+			},
+			{
+				"name": "creation_date",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "update_date",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "test",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "schemanotenabled"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

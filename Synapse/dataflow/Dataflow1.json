@@ -1,0 +1,62 @@
+{
+	"name": "Dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Parquet2",
+						"type": "DatasetReference"
+					},
+					"name": "source"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "ASD",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          campus_key as integer,",
+				"          campus_code as string,",
+				"          campus_name as string,",
+				"          mail_id as string,",
+				"          course as string,",
+				"          creation_date as timestamp,",
+				"          update_date as timestamp",
+				"     ),",
+				"     allowSchemaDrift: false,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     format: 'parquet') ~> source",
+				"source sink(allowSchemaDrift: false,",
+				"     validateSchema: false,",
+				"     input(",
+				"          campus_key as integer,",
+				"          campus_code as string,",
+				"          campus_name as string,",
+				"          mail_id as string,",
+				"          course as string,",
+				"          creation_date as timestamp,",
+				"          update_date as timestamp,",
+				"          test as string",
+				"     ),",
+				"     deletable:false,",
+				"     insertable:true,",
+				"     updateable:false,",
+				"     upsertable:false,",
+				"     format: 'table',",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     errorHandlingOption: 'stopOnFirstError') ~> sink1"
+			]
+		}
+	}
+}

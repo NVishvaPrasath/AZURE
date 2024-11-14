@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabasealldatatype",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "schemadriftalldatatypecheck"
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
